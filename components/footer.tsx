@@ -58,11 +58,6 @@ export default function Footer() {
         <footer className="m-1 rounded-3xl border">
             <div className="mx-auto max-w-5xl space-y-16 px-5 py-16">
                 <div className="flex flex-wrap items-center justify-between gap-4 border-b pb-8">
-                    <Link
-                        href="/"
-                        aria-label="go home">
-                        <Logo />
-                    </Link>
                     <div className="flex gap-3">
                         <Link
                             href="#"

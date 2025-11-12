@@ -8,6 +8,14 @@ import { AnimatedGroup } from '@/components/ui/animated-group'
 import { HeroHeader } from './header'
 
 const transitionVariants = {
+    container: {
+        visible: {
+            transition: {
+                staggerChildren: 0.05,
+                delayChildren: 0.75,
+            },
+        },
+    },
     item: {
         hidden: {
             opacity: 0,
@@ -121,17 +129,7 @@ export default function HeroSection() {
                                 </TextEffect>
 
                                 <AnimatedGroup
-                                    variants={{
-                                        container: {
-                                            visible: {
-                                                transition: {
-                                                    staggerChildren: 0.05,
-                                                    delayChildren: 0.75,
-                                                },
-                                            },
-                                        },
-                                        ...transitionVariants,
-                                    }}
+                                    variants={transitionVariants}
                                     className="mt-12 flex flex-col items-center justify-center gap-2 md:flex-row">
                                     <div
                                         key={1}
@@ -160,17 +158,7 @@ export default function HeroSection() {
                         </div>
 
                         <AnimatedGroup
-                            variants={{
-                                container: {
-                                    visible: {
-                                        transition: {
-                                            staggerChildren: 0.05,
-                                            delayChildren: 0.75,
-                                        },
-                                    },
-                                },
-                                ...transitionVariants,
-                            }}>
+                            variants={transitionVariants}>
                             <div className="mask-b-from-55% relative -mr-56 mt-8 overflow-hidden px-2 sm:mr-0 sm:mt-12 md:mt-20">
                                 <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-6xl overflow-hidden rounded-2xl border p-4 shadow-lg shadow-zinc-950/15 ring-1">
                                     <Image
