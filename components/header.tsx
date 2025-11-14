@@ -37,7 +37,7 @@ export const HeroHeader = () => {
                             <Link
                                 href="/"
                                 aria-label="home"
-                                className="flex items-center space-x-2">
+                                className="flex items-center">
                                 <span className="text-lg font-semibold">ScribeWise</span>
                                 <div className="relative h-8 w-8">
                                     <Image 

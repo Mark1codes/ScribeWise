@@ -101,7 +101,7 @@ export default function IntegrationsSection() {
                     </div>
                     <div className="mx-auto mt-12 max-w-lg space-y-6 text-center">
                         <h2 className="text-balance text-3xl font-semibold md:text-4xl">Integrate with your favorite tools</h2>
-                        <p className="text-muted-foreground">Connect seamlessly with popular platforms and services to enhance your workflow.</p>
+                        <p className="text-muted-foreground">Bring AI-powered writing assistance to every corner of your workflow. Scribewise works seamlessly with the apps and platforms you already love.</p>
 
                         <Button
                             variant="outline"

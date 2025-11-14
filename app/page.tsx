@@ -4,7 +4,8 @@ import Footer from "@/components/footer";
 import HeroSection from "@/components/hero-section";
 import IntegrationsSection from "@/components/integrations-7";
 import StatsSection from "@/components/stats-3";
-import TeamSection from "@/components/team";
+import Pricing from "@/components/pricing";
+import ContentSection from "@/components/content-2";
 import { ThemeToggleButton } from "@/components/ThemeToggleButton";
 
 export default function Home() {
@@ -14,7 +15,8 @@ export default function Home() {
       <Features />
       <IntegrationsSection />
       <StatsSection />
-      <TeamSection />
+      <ContentSection />
+      <Pricing />
       <FAQsThree />
       <Footer />
       <ThemeToggleButton />
