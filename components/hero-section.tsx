@@ -6,14 +6,18 @@ import Image from 'next/image'
 import { TextEffect } from '@/components/ui/text-effect'
 import { AnimatedGroup } from '@/components/ui/animated-group'
 import { HeroHeader } from './header'
+import { Variants, Transition } from 'motion/react'
 
-const transitionVariants = {
+const transitionVariants: {
+    container: Variants;
+    item: Variants;
+} = {
     container: {
         visible: {
             transition: {
                 staggerChildren: 0.05,
                 delayChildren: 0.75,
-            },
+            } as Transition,
         },
     },
     item: {
@@ -30,7 +34,7 @@ const transitionVariants = {
                 type: 'spring',
                 bounce: 0.3,
                 duration: 1.5,
-            },
+            } as Transition,
         },
     },
 }
@@ -55,7 +59,7 @@ export default function HeroSection() {
                                     visible: {
                                         transition: {
                                             delayChildren: 1,
-                                        },
+                                        } as Transition,
                                     },
                                 },
                                 item: {
@@ -70,7 +74,7 @@ export default function HeroSection() {
                                             type: 'spring',
                                             bounce: 0.3,
                                             duration: 2,
-                                        },
+                                        } as Transition,
                                     },
                                 },
                             }}
